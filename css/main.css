@@ -1,0 +1,153 @@
+.content-main{
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    width: 100%;
+    height: 558px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* Media query para tablets (de 601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+   
+    .content-main{
+        max-width: 620px;
+        height: 900px;
+        box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 20px;
+        justify-content: space-between;
+    }
+    .content-main h1{
+        font-size: 3rem;
+    }
+    .form-card{
+        height: 400px;
+        justify-content: space-between;
+    }
+
+    .form-card [type="number"],
+    .form-card select{
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        height: 80px;
+        font-weight: 600;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        width: 100%;
+        color: #666666;
+        background-color: rgba(77, 77, 77, 0.08);
+    }
+
+    input[type="text"]::placeholder,
+    input[type="number"]::placeholder{
+        color: rgba(128, 128, 128, 0.5); /* Usando rgba para definir a cor com um valor de transparência */
+        font-weight: 500;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+        appearance: none;
+        width: 30px; /* Largura desejada do checkbox */
+        height: 30px; /* Altura desejada do checkbox */
+        background-color: #f0f0f0; /* Cor de fundo cinza claro */
+        border: 1px solid #e4e4e4;  /* Remove a borda */
+        border-radius: 20%;
+    }
+    
+    .form-card label{
+        font-size: 1.5rem;
+    }
+
+    .content-main .btn-box button{
+        height: 80px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Media query para tablets maiores e desktops (mais de 901px) */
+@media (min-width: 901px) {
+    .content-main{
+        width: 90vw;
+        box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 20px;
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .content-main h1{
+        font-size: 3rem;
+        width: 100%;
+        flex-basis: 100%;
+        display: block;
+    }
+
+    .content-main form{
+        flex-basis: 40%;
+        margin-right: 30px;
+    }
+
+    .form-card{
+        
+        justify-content: space-between;
+    }
+
+    .form-card [type="number"],
+    .form-card select{
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        height: 80px;
+        font-weight: 600;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        width: 100%;
+        color: #666666;
+        background-color: rgba(77, 77, 77, 0.08);
+    }
+
+    input[type="text"]::placeholder,
+    input[type="number"]::placeholder{
+        color: rgba(128, 128, 128, 0.5); /* Usando rgba para definir a cor com um valor de transparência */
+        font-weight: 500;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+        appearance: none;
+        width: 30px; /* Largura desejada do checkbox */
+        height: 30px; /* Altura desejada do checkbox */
+        background-color: #f0f0f0; /* Cor de fundo cinza claro */
+        border: 1px solid #e4e4e4;  /* Remove a borda */
+        border-radius: 20%;
+    }
+    
+    .form-card label{
+        font-size: 1.5rem;
+    }
+    .content-main .btn-box{
+        flex-basis: 40%;
+    }
+    .content-main .btn-box button{
+        height: 80px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-main .btn-box button{
+        height: 80px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        width: 400px;
+    }
+    .content-main .btn-box{
+        justify-content: center;
+        align-items: center;
+    }
+}
